@@ -1,0 +1,83 @@
+﻿@model BodyBuddy.Models.UserProfile
+@using System.Activities.Expressions
+@*@model IEnumerable<BodyBuddy.Models.UserDetailDB>*@
+@{
+    ViewBag.Title = "ProfilePage";
+}
+
+
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center>
+                        <br />
+                        <br />
+                        <br />
+                        <a><img src="~/Images/ProfilePic1.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                        <h3 class="media-heading">
+                            Suzy Sickalot, <small>Nottingham</small>
+                        </h3>
+
+                        <span class="label label-success"><strong>FUNDRAISER</strong></span>
+                    </center>
+                    <br />
+                    <div class="ui star rating">
+                        <i class="icon active"></i>
+                        <i class="icon active"></i>
+                        <i class="icon active"></i>
+                        <i class="icon active"></i>
+                        <i class="icon active"></i>
+                    </div>
+                    <br/>
+                    <center>
+                        <span><strong>Charities: </strong></span>
+                        <span class="large label label-warning">Crohns</span>
+                        <span class="label label-warning">Colitis</span>
+                        <span class="label label-warning">MAP</span>
+                    </center>
+                    <br/>
+                    <center>
+                        <span><strong>Events interested in: </strong></span>
+                        <span class="label label-info">Athletic</span>
+                        <span class="label label-info">AssualtCourses</span>
+                        <span class="label label-info">Novelty</span>
+                        <span class="label label-info">Running</span>
+                    </center>
+                    <br/>
+                    <hr>
+                    <center>
+                        <p class="text-left">
+                            <strong>Bio: </strong><br>
+                            Had Crohns for many years and have been fundraising nearly as long. Interested in raising money for a variety
+                            of challenges and hopefully raise awareness
+                        </p>
+                        <br>
+                    </center>
+                    <hr>
+                    <center>
+                        <p class="text-left">
+                            <strong>Contact: </strong><br>
+                        </p>
+                        <a class="ui facebook button" href="https://www.facebook.com/jessica.white.5245">
+                            <i class="facebook icon"></i>
+                            Facebook
+                        </a>
+                        <a class="ui twitter button" href="https://twitter.com/JessPWhite">
+                            <i class="twitter icon"></i>
+                            Twitter
+                        </a>
+                        <a class="ui google plus button" href="https://plus.google.com/">
+                            <i class="google plus icon"></i>
+                            Google Plus
+                        </a>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

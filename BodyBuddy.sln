@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuddy", "BodyBuddy\BodyBuddy.csproj", "{617C241C-BD2B-4C4F-AE9D-70F7059D2198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodyBuddy.Tests", "BodyBuddy.Tests\BodyBuddy.Tests.csproj", "{B17CD3FE-D120-47BC-BB6E-63C5445BC87C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617C241C-BD2B-4C4F-AE9D-70F7059D2198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617C241C-BD2B-4C4F-AE9D-70F7059D2198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617C241C-BD2B-4C4F-AE9D-70F7059D2198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617C241C-BD2B-4C4F-AE9D-70F7059D2198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17CD3FE-D120-47BC-BB6E-63C5445BC87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17CD3FE-D120-47BC-BB6E-63C5445BC87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17CD3FE-D120-47BC-BB6E-63C5445BC87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17CD3FE-D120-47BC-BB6E-63C5445BC87C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
