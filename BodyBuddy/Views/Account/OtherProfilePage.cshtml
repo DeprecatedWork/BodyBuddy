@@ -2,76 +2,121 @@
     ViewBag.Title = "OtherProfilePage";
 }
 
-<div class="container">
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <center>
-                        <br />
-                        <br />
-                        <br />
-                        <a><img src="~/Images/ProfilePic2.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                        <h3 class="media-heading">
-                            Jackie Sixpackie, <small>Nottingham</small>
-                        </h3>
+<body class="bodybum">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1507333236231737";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <center>
+                            <br />
+                            <br/>
+                            <br/>
+                            <div class="fb-share-button" data-href="http://localhost:63005/Account/ProfilePage#JGmodal1" data-layout="button_count"></div>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-text="BodyBuddyProfile" data-via="JessPWhite" data-hashtags="BodyBuddy">Tweet</a>
+                            <script>
+                                !function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                    if (!d.getElementById(id)) {
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = p + '://platform.twitter.com/widgets.js';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                }(document, 'script', 'twitter-wjs');
+                            </script>
+                            <br/>
+                            <br/>
+                            <a><img src="~/Images/ProfilePic2.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                            <h3 class="media-heading">
+                                Jackie Sixpackie, <small>Nottingham</small>
+                            </h3>
 
-                        <span class="label label-infoTag"><strong>ATHLETE</strong></span>
-                    </center>
-                    <br />
-                    <div class="ui star rating">
-                        <i class="icon active"></i>
-                        <i class="icon active"></i>
-                        <i class="icon active"></i>
-                        <i class="icon active"></i>
-                        <i class="icon active"></i>
+                            <span class="label label-infoTag"><strong>ATHLETE</strong></span>
+                        </center>
+                        <br />
+                        <div class="ui star rating">
+                            <i class="icon active"></i>
+                            <i class="icon active"></i>
+                            <i class="icon active"></i>
+                            <i class="icon active"></i>
+                            <i class="icon active"></i>
+                        </div>
+                        <br />
+                        <center>
+                            <span><strong>Charities: </strong></span>
+                            <span class="large label label-success2">Crohns</span>
+                            <span class="label label-success2">Colitis</span>
+                            <span class="label label-success2">MAP</span>
+                        </center>
+                        <br />
+                        <center>
+                            <span><strong>Events interested in: </strong></span>
+                            <span class="label label-warning">Strength</span>
+                            <span class="label label-warning">Endurance</span>
+                            <span class="label label-warning">AssaultCourse</span>
+                            <span class="label label-warning">Running</span>
+                        </center>
+                        <br />
+                        <hr>
+                        <center>
+                            <p class="text-left">
+                                <strong>Bio: </strong><br>
+                                I Lift Things Up. I Put Things Down. Then I Lift Them Up Again.
+                            </p>
+                            <br>
+                            <p class="text-left">
+                                <strong>Current/Past Events: </strong><br>
+                            </p>
+                            <div class="col-md-2 col-sm-2 col-xs-3 portfolio-item">
+                                <a href="https://www.justgiving.com/Laura-tough-mudder/">
+                                    <img src="~/Images/JustGiving.jpg" class="img-responsive img-rounded img-shadow" alt="">
+                                </a>
+                                <a href="https://www.justgiving.com/Run-For-Crohns-MEN3936/">
+                                    <img src="~/Images/JustGiving.jpg" class="img-responsive img-rounded img-shadow" alt="">
+                                </a>
+                                <p class="text-left">
+                                    <strong>Friends: </strong><br>
+                                </p>
+                                @Html.ActionLink("Profile", "ProfilePage", "Account", new{@class = "friend"})
+                            </div>
+                        </center>
+                        <hr>
+                        <center>
+                            <p class="text-left">
+                                <strong>Contact: </strong><br>
+                            </p>
+                            <a class="ui facebook button" href="https://www.facebook.com/Dana-Linn-Bailey-164383783598106/">
+                                <i class="facebook icon"></i>
+                                Facebook
+                            </a>
+                            <a class="ui twitter button" href="https://twitter.com/daydayKnucks">
+                                <i class="twitter icon"></i>
+                                Twitter
+                            </a>
+                            <a class="ui google plus button" href="https://plus.google.com/">
+                                <i class="google plus icon"></i>
+                                Google Plus
+                            </a>
+                        </center>
+                        <br/>
+                        <br/>
                     </div>
-                    <br />
-                    <center>
-                        <span><strong>Charities: </strong></span>
-                        <span class="large label label-success2">Crohns</span>
-                        <span class="label label-success2">Colitis</span>
-                        <span class="label label-success2">MAP</span>
-                    </center>
-                    <br />
-                    <center>
-                        <span><strong>Events interested in: </strong></span>
-                        <span class="label label-warning">Strength</span>
-                        <span class="label label-warning">Endurance</span>
-                        <span class="label label-warning">AssaultCourse</span>
-                        <span class="label label-warning">Running</span>
-                    </center>
-                    <br />
-                    <hr>
-                    <center>
-                        <p class="text-left">
-                            <strong>Bio: </strong><br>
-                            I Lift Things Up. I Put Things Down. Then I Lift Them Up Again.
-                        </p>
-                        <br>
-                    </center>
-                    <hr>
-                    <center>
-                        <p class="text-left">
-                            <strong>Contact: </strong><br>
-                        </p>
-                        <a class="ui facebook button" href="https://www.facebook.com/Dana-Linn-Bailey-164383783598106/">
-                            <i class="facebook icon"></i>
-                            Facebook
-                        </a>
-                        <a class="ui twitter button" href="https://twitter.com/daydayKnucks">
-                            <i class="twitter icon"></i>
-                            Twitter
-                        </a>
-                        <a class="ui google plus button" href="https://plus.google.com/">
-                            <i class="google plus icon"></i>
-                            Google Plus
-                        </a>
-                    </center>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
+</body>

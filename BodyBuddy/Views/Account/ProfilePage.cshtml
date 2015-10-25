@@ -5,6 +5,18 @@
     ViewBag.Title = "ProfilePage";
 }
 
+<body class="bodybum">
+    <div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1507333236231737";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div class="container">
     <!-- Modal -->
@@ -13,9 +25,14 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <center>
-                        <br />
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="fb-share-button" data-href="http://localhost:63005/Account/ProfilePage#JGmodal1" data-layout="button_count"></div>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="BodyBuddyProfile" data-via="JessPWhite" data-hashtags="BodyBuddy">Tweet</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br/>
+                        <br/>
                         <a><img src="~/Images/ProfilePic1.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
                         <h3 class="media-heading">
                             Suzy Sickalot, <small>Nottingham</small>
@@ -23,7 +40,7 @@
 
                         <span class="label label-success"><strong>FUNDRAISER</strong></span>
                     </center>
-                    <br />
+                    <br/>
                     <div class="ui star rating">
                         <i class="icon active"></i>
                         <i class="icon active"></i>
@@ -54,10 +71,20 @@
                             Had Crohns for many years and have been fundraising nearly as long. Interested in raising money for a variety
                             of challenges and hopefully raise awareness
                         </p>
+                        <p class="text-left">
+                            <strong>Current/Past Events: </strong><br>
+                        </p>
+                        <div class="col-md-2 col-sm-2 col-xs-3 portfolio-item">
+                            <a href="https://www.justgiving.com/Jessica-White9">
+                                <img src="~/Images/JustGiving.jpg" class="img-responsive img-rounded img-shadow" alt="">
+                            </a>
+                        </div>
                         <br>
                     </center>
                     <hr>
                     <center>
+                        <br/>
+                        <br/>
                         <p class="text-left">
                             <strong>Contact: </strong><br>
                         </p>
@@ -74,10 +101,10 @@
                             Google Plus
                         </a>
                     </center>
+                    <br/>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
+</body>

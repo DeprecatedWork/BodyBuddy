@@ -47,7 +47,12 @@ a {
     a:hover {
         background-color: #c7d1d6;
     }
-
+    .friend {
+        background: url(../Images/ProfilePic1Mini.jpg) no-repeat top left;
+     display: block;
+     width: 150px;
+     height: 150px;
+    }
 header, footer, hgroup,
 nav, section {
     display: block;
@@ -1153,7 +1158,7 @@ tr.pager td {
     display: -ms-flexbox;
     display: flex;
     margin: 1rem 0em;
-    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', 'Arial', Arial, Arial, sans-serif;
     background: #ffffff;
     font-weight: normal;
     border: 1px solid rgba(34, 36, 38, 0.15);
